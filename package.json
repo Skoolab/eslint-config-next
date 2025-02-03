@@ -1,0 +1,63 @@
+{
+  "name": "@skoolab/eslint-config-next",
+  "version": "1.0.0",
+  "description": "Skoolab ESlint custom rules for Next.js projects.",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "typescript",
+    "nextjs"
+  ],
+  "homepage": "https://github.com/Skoolab/eslint-config-next#readme",
+  "bugs": {
+    "url": "https://github.com/Skoolab/eslint-config-next/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Evrwaq",
+    "email": "evrwaq@gmail.com",
+    "url": "https://github.com/evrwaq"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Skoolab/eslint-config-next.git"
+  },
+  "main": "eslint.config.js",
+  "scripts": {
+    "check": "ncu --interactive --format group",
+    "check-publish-files": "npm pack --dry-run",
+    "lint": "eslint .",
+    "prepare": "husky",
+    "major": "npm version major",
+    "minor": "npm version minor",
+    "patch": "npm version patch"
+  },
+  "files": [
+    "eslint.config.js"
+  ],
+  "dependencies": {
+    "@skoolab/eslint-config": "^1.0.5"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@types/eslint__js": "^8.42.3",
+    "husky": "^9.1.7",
+    "npm-check-updates": "^17.1.14",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "@skoolab/eslint-config": "^1.0.5",
+    "eslint": "^9.19.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module"
+}
